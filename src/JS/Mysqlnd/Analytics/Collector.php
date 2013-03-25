@@ -2,7 +2,7 @@
 namespace JS\Mysqlnd\Analytics;
 
 /**
- * Class to wrap mysqli_get_client_stats() calls and calculate stas
+ * Class to wrap mysqli_get_client_stats() calls and calculate stats
  *
  * This class wraps calls to mysqli_get_client_stats() and calculates
  * the difference between the initial value and the collection point.
