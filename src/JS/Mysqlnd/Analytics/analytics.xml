@@ -43,6 +43,24 @@
     <left>{{ bad_index_used }}</left>
     <operator>greater-than</operator>
     <right>0</right>
-    <guidance>The database server processed queries where a bad index was used. Verify your indexes.</guidance>
+    <guidance>The MySQL server processed queries where a bad index was used. Verify your indexes.</guidance>
+  </rule>
+  <rule name="Slow Queries" severity="warning">
+    <left>{{ slow_queries }}</left>
+    <operator>greater-than</operator>
+    <right>0</right>
+    <guidance>The MySQL server reported queries which took more time than the slow_query threshold allows.</guidance>
+  </rule>
+  <rule>
+    <left>{{ init_command_failed_count }}</left>
+    <operator>greater-than</operator>
+    <right>0</right>
+    <guidance>The client library was aked to send init commands while connecting to the MySQL database server. The server reporter errors while executing those.</guidance>
+  </rule>
+  <rule>
+    <left>{{ command_buffer_too_small }}</left>
+    <operator>greater-than</operator>
+    <right>0</right>
+    <guidance>mysqlnd's command buffer was too small and had to be resized. You might want to increase the default size using mysqlnd.net_cmd_buffer_size in php.ini.</guidance>
   </rule>
 </analytics>
