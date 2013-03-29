@@ -15,12 +15,26 @@ extension is only used to retrieve data. It is no requirement for your
 application to use to use mysqli. Applications using  Doctrine and PDO are
 fully supported.
 
+This library depends on [rezzza/Formulate](https://github.com/rezzza/Formulate).
+
+Composer
+--------
+
+This library can be installed using composer:
+
+``` bash
+$ php composer.phar require "js/mysqlnd-analytics=dev-master"
+```
+
+Take a look at [the page on Packagist web site](https://packagist.org/packages/js/mysqlnd-analytics) for more details and up-to-date version numbers.
+
 Usage Example
 -------------
 
 A simple use case might llook like this:
 
-```
+```php
+<?php
 use JS\Mysqlnd\Analytics\Engine;
 use JS\Mysqlnd\Analytics\DefaultRuleProvider;
 use JS\Mysqlnd\Analytics\Calculator;
@@ -44,4 +58,5 @@ foreach ($analytics as $analytic) {
 Notes
 -----
 
-For Symfony applications an bundle using this library exists.
+For Symfony applications an [bundle using this library](https://github.com/johannes/JSMysqlndBundle) exists.
+
