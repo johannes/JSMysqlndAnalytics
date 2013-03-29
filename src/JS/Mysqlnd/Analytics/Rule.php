@@ -6,7 +6,7 @@ namespace JS\Mysqlnd\Analytics;
 * Describe an analytics rule to be checked
 *
 * A rule consists of two formulas and a comparison operator as well as
-* meta infomration describing the analytics event in case this rule matches.
+* meta information describing the analytics event in case this rule matches.
 */
 class Rule
 {
