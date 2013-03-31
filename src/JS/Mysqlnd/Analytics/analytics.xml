@@ -51,13 +51,13 @@
     <right>0</right>
     <guidance>The MySQL server reported queries which took more time than the slow_query threshold allows.</guidance>
   </rule>
-  <rule>
+  <rule name="Init Command Failed" severity="error">
     <left>{{ init_command_failed_count }}</left>
     <operator>greater-than</operator>
     <right>0</right>
     <guidance>The client library was aked to send init commands while connecting to the MySQL database server. The server reporter errors while executing those.</guidance>
   </rule>
-  <rule>
+  <rule name="Command Buffer Too Small" severity="warning">
     <left>{{ command_buffer_too_small }}</left>
     <operator>greater-than</operator>
     <right>0</right>
