@@ -23,7 +23,7 @@ Composer
 This library can be installed using composer:
 
 ``` bash
-$ php composer.phar require "js/mysqlnd-analytics=dev-master"
+$ php composer.phar require "js/mysqlnd-analytics=1.1.*"
 ```
 
 Take a look at [the page on Packagist web site](https://packagist.org/packages/js/mysqlnd-analytics) for more details and up-to-date version numbers.
